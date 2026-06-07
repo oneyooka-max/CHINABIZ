@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 
   // ── PROXY vers Gemini ─────────────────────────────────────────────────────
   const GEMINI_KEY = process.env.GEMINI_API_KEY; // Variable d'env Vercel
-  const MODEL = req.body.model || "gemini-1.5-flash-latest";
+  const MODEL = req.body.model || "gemini-2.0-flash";
   if (!GEMINI_KEY) {
     return res.status(500).json({ error: "Gemini API key not configured on server" });
   }
