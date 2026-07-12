@@ -1,0 +1,5 @@
+{
+  "routes": [
+    { "src": "/privacy", "dest": "/privacy.html" }
+  ]
+}
