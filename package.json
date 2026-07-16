@@ -1,5 +1,11 @@
 {
-  "name": "chinabiz-proxy",
-  "version": "1.0.0",
-  "description": "Proxy Gemini API pour ChinaBiz — clé protégée côté serveur"
+  "version": 2,
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/privacy", "dest": "/privacy.html" },
+    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
+    { "src": "/robots.txt", "dest": "/robots.txt" },
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
 }
